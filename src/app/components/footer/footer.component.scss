@@ -1,5 +1,4 @@
 :host {
-  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -9,28 +8,31 @@
   .mat-toolbar {
     background-color: #004a86;
     color: white;
-    height: 64px;
+    height: 4rem;
     justify-content: center;
 
     .footer-content {
       text-align: center;
-      font-size: 0.9em;
+      font-size: 0.9rem;
       width: 100%;
-      max-width: 1200px;
-      padding: 0 24px;
+      max-width: 75rem;
+      padding: 0 1.5rem;
 
       p {
-        margin: 4px 0;
+        margin: 0;
+        padding: 0 0.125rem;
+        font-weight: 400;
       }
 
       a {
         color: white;
         text-decoration: none;
+        font-weight: 500;
         transition: opacity 0.3s ease;
 
         &:hover {
           opacity: 0.8;
-          text-decoration: underline;
+          font-size: 0.95rem;
         }
       }
     }
@@ -39,10 +41,15 @@
   @media (max-width: 600px) {
     .mat-toolbar {
       height: 56px;
-      font-size: 0.8em;
+      font-size: 0.7em;
       
       .footer-content {
-        padding: 0 12px;
+        padding: 0 0.75rem;
+
+        p {
+          margin: 0;
+          padding: 0 1px;
+        }
       }
     }
   }
